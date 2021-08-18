@@ -21,3 +21,19 @@ jdk,androidstudio,sdk,avd 설치
 xml파일과 엑티비티 파일로 구성  
 
 <hr>
+
+# day2(2021/08/18)
+## 뷰
+### 교재학습(109~)
+뷰의 속성
+id 뷰를 칭하는 고유의 이름
+layout_width 뷰의 폭
+layout_height 뷰의 높이
+match_parent 부모를 가득 채우는 속성
+background 뷰의 배경 색
+padding 뷰와 내용물 간의 간격
+visibility(visible,invisible,gone) 보이기 내용만숨기기 자리까지 숨기기
+clickable 클릭이벤트  
+longclickable 길게 클릭 이벤트
+focusable 키보드 포커스
+
