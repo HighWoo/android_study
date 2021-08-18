@@ -23,17 +23,17 @@ xml파일과 엑티비티 파일로 구성
 <hr>
 
 # day2(2021/08/18)
-## 뷰
-### 실습
+## 뷰(교재 4장)
+
 string file을 res/values/strings에 정의하면  
 xal파일에서 text="@string/name"으로 사용할 수 있다  
 
-### 교재학습(109~)
 뷰의 속성(112p)  
 id 뷰를 칭하는 고유의 이름  
 layout_width 뷰의 폭  
 layout_height 뷰의 높이  
 match_parent 부모를 가득 채우는 속성  
+wrap_content 객체사이즈에 맞추기  
 background 뷰의 배경 색  
 padding 뷰와 내용물 간의 간격  
 visibility(visible,invisible,gone) 보이기 내용만숨기기 자리까지 숨기기  
@@ -48,6 +48,19 @@ focusable 키보드 포커스
 이미지 호출방법 android:src="@drawable/이미지이름"  
 이미지뷰의 크기를 적당히 조절 android:adjustViewBounds="true"  
 
+## 레이아웃(교재 5장)  
+리니어 레이아웃  
+orientation="vertical" 위에서 아래로(수직배치)  
+orientation="horizontal" 왼쪽에서 오른쪽으로(수평배치)  
+  
+정렬 gravity 속성(143p)  
+베이스정렬 baselinealigned(152p) 값 false(상단기준 정렬) true(하단기준 정렬)  
+레이아웃도 비율 분할 가능 layout_height 에 1 3 1 하면 1대 3대 1로 정렬 (154p)  
+margin padding(158p)  
+렐러티브레이아웃(161p)  
+테이블레이아웃(178p)  
+
+<hr>
 
 
 
