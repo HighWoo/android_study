@@ -25,28 +25,28 @@ xml파일과 엑티비티 파일로 구성
 # day2(2021/08/18)
 ## 뷰
 ### 실습
-string file을 res/values/strings에 정의하면
-xal파일에서 text="@string/name"으로 사용할 수 있다
+string file을 res/values/strings에 정의하면  
+xal파일에서 text="@string/name"으로 사용할 수 있다  
 
 ### 교재학습(109~)
-뷰의 속성(112p)
-id 뷰를 칭하는 고유의 이름
-layout_width 뷰의 폭
-layout_height 뷰의 높이
-match_parent 부모를 가득 채우는 속성
-background 뷰의 배경 색
-padding 뷰와 내용물 간의 간격
-visibility(visible,invisible,gone) 보이기 내용만숨기기 자리까지 숨기기
-clickable 클릭이벤트
-longclickable 길게 클릭 이벤트
-focusable 키보드 포커스
-
-이미지(124p)
-이미지는 png를 사용하는게 좋다
-이미지 저장폴더는 res/drawable
-앱 아이콘 res/mipmap
-이미지 호출방법 android:src="@drawable/이미지이름"
-이미지뷰의 크기를 적당히 조절 android:adjustViewBounds="true"
+뷰의 속성(112p)  
+id 뷰를 칭하는 고유의 이름  
+layout_width 뷰의 폭  
+layout_height 뷰의 높이  
+match_parent 부모를 가득 채우는 속성  
+background 뷰의 배경 색  
+padding 뷰와 내용물 간의 간격  
+visibility(visible,invisible,gone) 보이기 내용만숨기기 자리까지 숨기기  
+clickable 클릭이벤트 
+longclickable 길게 클릭 이벤트 
+focusable 키보드 포커스 
+  
+이미지(124p) 
+이미지는 png를 사용하는게 좋다  
+이미지 저장폴더는 res/drawable  
+앱 아이콘 res/mipmap  
+이미지 호출방법 android:src="@drawable/이미지이름"  
+이미지뷰의 크기를 적당히 조절 android:adjustViewBounds="true"  
 
 
 
