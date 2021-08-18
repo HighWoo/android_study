@@ -34,5 +34,14 @@
         android:textColor="#ff0000"
         android:textSize="20pt"
         android:textStyle="bold"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/youtube"
+        android:maxHeight="100px"
+        android:maxWidth="200px"
+        android:adjustViewBounds="true"
+        ></ImageView>
 </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
