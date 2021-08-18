@@ -36,12 +36,24 @@
         android:textStyle="bold"/>
 
     <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:src="@drawable/youtube"
-        android:maxHeight="100px"
-        android:maxWidth="200px"
         android:adjustViewBounds="true"
+        android:background="#ff00ff"
         ></ImageView>
+    <EditText
+        android:id="@+id/edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="입력하세요"
+        ></EditText>
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="보내기"
+        ></Button>
+
 </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
