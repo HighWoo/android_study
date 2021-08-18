@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">android_study</string>
+    <string name="everyteam">EveryTeam</string>
+    <string name="everyteamkr">에브리팀</string>
 </resources>
