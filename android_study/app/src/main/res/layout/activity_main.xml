@@ -42,6 +42,11 @@
         android:adjustViewBounds="true"
         android:background="#ff00ff"
         ></ImageView>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       >
     <EditText
         android:id="@+id/edit"
         android:layout_width="wrap_content"
@@ -54,6 +59,7 @@
         android:layout_height="wrap_content"
         android:text="보내기"
         ></Button>
+</LinearLayout>
 
 </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
