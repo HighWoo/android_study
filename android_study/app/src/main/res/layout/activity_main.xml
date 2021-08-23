@@ -1,14 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+
+   >
 <LinearLayout
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#ffff0f"
+    android:id="@+id/vw"
     >
 
     <TextView
@@ -27,15 +31,8 @@
         android:textSize="20pt"
         android:textStyle="bold"/>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="반갑습니당"
-        android:textColor="#ff0000"
-        android:textSize="20pt"
-        android:textStyle="bold"/>
-
     <ImageView
+        android:id="@+id/image"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/youtube"
@@ -60,6 +57,33 @@
         android:text="보내기"
         ></Button>
 </LinearLayout>
-
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+    <TextView
+        android:id="@+id/count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textColor="#ff0000"
+        android:textSize="20pt"
+        android:textStyle="bold" />
+    <Button
+        android:id="@+id/up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="증가"
+        android:onClick="mOnClick"
+        ></Button>
+    <Button
+        android:id="@+id/down"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="감소"
+        android:onClick="mOnClick"
+        ></Button>
+    </LinearLayout>
 </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
