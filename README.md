@@ -104,7 +104,49 @@ BitmapShader(277p)
 퍼미션(302p)  
 특정한 기능을 사용한다는 것을 명확하게 선언  
 
+<hr>  
 
+# day4(2021/08/23)  
+## 이벤트(교재 8장)  
+onTouchEvent 화면터치  
+onkeydown,up 눌러진 키  
+
+여러가지 이벤트 실습  
+![image](https://user-images.githubusercontent.com/75231868/130415403-b2151b1c-053c-4595-95ae-dbeefd72d147.png)  
+증감 코드 실습  
+ 
+xml버튼코드  
+android:id="@+id/btn"  
+자바코드  
+btn=(Button)findViewById(R.id.btn);  
+        btn.setOnClickListener(new View.OnClickListener() {  
+            @Override  
+            public void onClick(View v) {  
+                Toast.makeText(getApplicationContext(),"버튼을 눌렀어요!!!!",Toast.LENGTH_SHORT).show();  
+            }  
+        });  
+형태로 이벤트 처리  
+  
+다른방법  
+  
+xml코드  
+android:onClick="mOnClick"  
+  
+자바코드  
+ public void mOnClick(View v) {  
+        switch (v.getId()) {  
+            case R.id.down:  
+                mCount--;  
+                mTextCount.setText("" + mCount);  
+                break;  
+            case R.id.up:  
+                mCount++;  
+                mTextCount.setText("" + mCount);  
+                break;  
+        }  
+    }  
+  
+  
 
 
 
