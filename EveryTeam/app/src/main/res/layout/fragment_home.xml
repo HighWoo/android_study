@@ -33,7 +33,7 @@
             <EditText
                 android:id="@+id/editTextTextPersonName"
                 android:layout_width="wrap_content"
-                android:layout_weidth="1"
+
                 android:layout_height="55dp"
                 android:inputType="textPersonName"
                 android:text="제목으로 검색하세요" />
@@ -42,7 +42,7 @@
                 android:id="@+id/button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weidth="1"
+
                 android:text="검색" />
         </LinearLayout>
 
