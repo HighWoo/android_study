@@ -257,4 +257,22 @@ style=@style/red
 그동안 학습한 자료로 간단한 앱 제작  
 이론적 학습은 일주일에 2번정도 진행  
 
+<hr>  
+
+# Day8(2021/09/09)  
+
+## 대화상자  
+대화상자를 통해 사용자와 통신한다  
+기본클래스는 Dialog 클래스 이지만 사용방법이 복잡하여 AlertDialog 를 사용한다  
+AlertDialog show() 보이기  
+AlertDialog create() 생성  
+버튼이 배치되어 있지 않은 대화상자(대화상자 외부클릭,장비의 Back 버튼으로 닫기)  
+![image](https://user-images.githubusercontent.com/75231868/132634193-ff8b6271-d8f0-4b52-82ad-c9a266e8b1d2.png)  
+버튼이 배치되어 있는 대화상자  
+setPositiveButton(text,리스너 객체)
+setNegativeButton(text,리스너 객체)  
+setNeutralButton(text,리스너 객체)  
+![image](https://user-images.githubusercontent.com/75231868/132634900-c10d00ac-7703-4234-b1ae-43235311230b.png)  
+
 <hr>
+
