@@ -276,3 +276,58 @@ setNeutralButton(text,리스너 객체)
 
 <hr>
 
+# Day9(2021/09/16)  
+
+## 대화상자  
+리스너의 onclick 메소드에 아무 코드도 없으면 대화상자를 닫는 동작을 한다  
+.setCancelable(false)    Back 버튼으로 닫기 금지  
+  
+
+대화상자는 대화상자 바깥쪽을 누르면 대화상자가 닫아진다  
+dialog.setCanceledOnTouchOutside(false); 대화상자 바깥을 눌러도 안닫히게 하는코드  
+true 를 넣으면 바깥쪽을 누르면 닫힌다  
+
+대화상자를 생성하려면 메모리를 많이 사용하기 때문에  
+create()메소드로 미리 생성해두고  
+void showDialog(int id) 만들어진 대화상자(id) 를 보이게 한다  
+void dismissDialog(int id) 만들어진 대화상자를 보이지 않게 한다  
+void removeDialog(int id) 만들어진 대화상자를 제거한다  
+
+## 프로그래스 다이얼로그  
+다이얼로그를 대화상자(팝업)으로 띄우는것  
+![image](https://user-images.githubusercontent.com/75231868/133556588-643fed72-5a47-46dc-9a78-1bb5e23a6df0.png)
+
+ProgressDialog mProgress = new ProgressDialog(this);  
+          mProgress.setProgressStyle(ProgressDialog.STYLE_HORIZONTAL);  
+          mProgress.setTitle("Updating");  
+          mProgress.setMessage("Wait...");  
+          mProgress.setCancelable(false); // Back 버튼으로 닫기 금지  
+          mProgress.setButton("Cancel", new DialogInterface.OnClickListener() {  
+                 public void onClick(DialogInterface dialog,int whichButton) {  
+                      mQuit = true;  // 업로딩을 cancel함  
+                      dismissDialog(0);  
+                 }  
+          });  
+
+
+## 대화상자 활용(알림메시지 전달 802p)  
+![image](https://user-images.githubusercontent.com/75231868/133557288-fe869f38-402a-4e1f-af26-7ca80f9ff3fc.png)  
+안드로이드 에서 버튼이 눌려진 후에 어떤작업 A를 하려고 하면 버튼의 이벤트 리스너 객체에서 어떤 작업 A를 수행하면 된다  
+리스너 객체 안에 넣지않으면 대화상자의 버튼을 누르기도 전에 실행되어버린다  
+
+## 대화상자 활용(목록 선택 814p)  
+![image](https://user-images.githubusercontent.com/75231868/133559731-e2387781-3bf1-458c-bb51-2bc5a24f732e.png)
+
+## 커스텀 대화상자(821p)  
+커스텀 뷰에 원하는 위젯을 배치한 후 메서드로 커스텀 뷰를 대화상자 안에 배치한다  
+setView(View view) 뷰를 대화상자 안에 배치할 수 있다  
+
+## 팝업 윈도우(823p)
+임의의 뷰를 담을 수 있는 컨테이너로 현재 액티비티의 위쪽에 임시적으로 잠시 열리는 윈도우이다  
+
+<hr>
+
+
+
+
+
